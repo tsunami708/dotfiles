@@ -21,9 +21,9 @@ return { -- Autocompletion
   opts = {
     keymap = {
       preset = 'default',
-      ['<Up>'] = {'select_next', 'fallback'},
+      ['<Down>'] = {'select_next', 'fallback'},
       ['<Tab>'] = {'select_next', 'fallback'},
-      ['<Down>'] = {'select_prev', 'fallback'},
+      ['<Up>'] = {'select_prev', 'fallback'},
       ['<S-Tab>'] = {'select_prev', 'fallback'},
       ['<CR>'] = {'accept', 'fallback'},
     },

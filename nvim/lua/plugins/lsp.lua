@@ -115,6 +115,11 @@ return {
 
     local servers = {
       clangd = {},
+      asm_lsp = {},
+      bashls = {},
+      neocmake = {},
+      rust_analyzer = {},
+      pyright = {},
     }
 
 
