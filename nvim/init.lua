@@ -13,9 +13,11 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   }
 end
+
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+  require('plugins.treesitter'),
   require('plugins.neotree'),
   require('plugins.theme'),
   require('plugins.telescope'),
@@ -31,3 +33,7 @@ require('lazy').setup({
   require('plugins.blankline'),
 })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'c' , 'cpp' , 'py' , 'rs'},
+  callback = function() vim.treesitter.start() end,
+})
