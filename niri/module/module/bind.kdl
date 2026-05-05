@@ -1,5 +1,6 @@
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+F1 hotkey-overlay-title="Restart fcitx" {spawn-sh "(pkill fcitx5 || true) && fcitx5";}
     Mod+T hotkey-overlay-title="Terminal" { spawn "kitty"; }
     MOD+Z hotkey-overlay-title="Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle";}
     Mod+S hotkey-overlay-title="Settings" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }

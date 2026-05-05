@@ -1,0 +1,9 @@
+spawn-at-startup "qs" "-c" "noctalia-shell" "--no-duplicate"
+
+include "module/input.kdl"
+include "module/output.kdl"
+include "module/layout.kdl"
+include "module/miscell.kdl"
+include "module/wrule.kdl"
+include "module/bind.kdl"
+include "./noctalia.kdl"

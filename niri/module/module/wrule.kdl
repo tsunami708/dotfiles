@@ -15,9 +15,13 @@ window-rule {
     match title=".*查看器.*"
     match title=".*通知.*"
     match title=".*完成.*"
+    match title=".*Open Files.*"
+    match title=".*记录.*"
+    match title=".*浏览.*"
     match title="wps"
     match title="et"
     match title="wpp"
+    match title=".*Photos.*"
     open-floating true
 }
 
